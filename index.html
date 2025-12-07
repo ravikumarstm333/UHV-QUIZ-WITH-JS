@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHV Quiz - Practice & Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            <h1>UHV Quiz</h1>
+            <div class="mode-switcher">
+                <button id="practiceModeBtn" class="mode-btn active">
+                    <i class="fas fa-book-open"></i> Practice
+                </button>
+                <button id="testModeBtn" class="mode-btn">
+                    <i class="fas fa-clipboard-check"></i> Test
+                </button>
+            </div>
+        </div>
+
+        <!-- Question Area -->
+        <div class="question-area">
+            <!-- Question Header -->
+            <div class="question-header">
+                <div class="question-info">
+                    <span id="questionNumber">Question 1</span>
+                    <span class="mode-indicator" id="modeIndicator">Practice Mode</span>
+                </div>
+
+                <!-- Practice Controls -->
+                <div class="practice-controls" id="practiceControls">
+                    <div class="navigation">
+                        <button id="prevBtn" class="nav-btn">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <div class="question-selector">
+                            <select id="questionSelect">
+                                <!-- Options will be populated by JS -->
+                            </select>
+                            <span>of 200</span>
+                        </div>
+                        <button id="nextBtn" class="nav-btn">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Test Controls -->
+                <div class="test-controls" id="testControls">
+                    <div class="test-navigation">
+                        <button id="testPrevBtn" class="nav-btn">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+
+                        <button id="testNextBtn" class="nav-btn">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="test-stats">
+                        <div class="stat">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Question <span id="currentQNum">1</span>/30</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>Time: <span id="timer">00:00</span></span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Score: <span id="score">0</span>/30</span>
+                        </div>
+                    </div>
+                    <div class="test-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="question-card">
+                <div class="question-title">
+                    <h2 id="questionText">What best defines: Justice involves?</h2>
+                    <button id="hinglishBtn" class="hinglish-btn">
+                        <i class="fas fa-language"></i> समझें (Hinglish)
+                    </button>
+                </div>
+
+                <!-- Hinglish Explanation -->
+                <div class="hinglish-explanation" id="hinglishExplanation">
+                    <h3><i class="fas fa-translate"></i> Hinglish Explanation:</h3>
+                    <p id="hinglishText">Justice किसे कहते हैं? इसका सही मतलब क्या है?</p>
+                </div>
+
+                <!-- Options -->
+                <div class="options-container" id="optionsContainer">
+                    <!-- Options will be loaded by JavaScript -->
+                </div>
+
+                <!-- Feedback -->
+                <div class="feedback" id="feedback">
+                    <div class="feedback-content">
+                        <i class="fas fa-check-circle" id="feedbackIcon"></i>
+                        <p id="feedbackText"></p>
+                    </div>
+                    <p id="correctAnswerText"></p>
+                </div>
+
+                <!-- Test Actions -->
+                <div class="test-actions" id="testActions">
+                    <button id="submitTestBtn" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Test
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Modal -->
+        <div class="results-modal" id="resultsModal">
+            <div class="results-content">
+                <h2><i class="fas fa-trophy"></i> Test Results</h2>
+
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="finalScore">0</span>
+                        <small>/30</small>
+                    </div>
+                    <p id="resultMessage">Your Score</p>
+                </div>
+
+                <div class="result-details">
+                    <div class="detail">
+                        <span>Correct Answers</span>
+                        <span class="correct-count" id="correctCount">0</span>
+                    </div>
+                    <div class="detail">
+                        <span>Incorrect Answers</span>
+                        <span class="incorrect-count" id="incorrectCount">0</span>
+                    </div>
+                    <div class="detail">
+                        <span>Time Taken</span>
+                        <span id="timeTaken">00:00</span>
+                    </div>
+                    <div class="detail">
+                        <span>Percentage</span>
+                        <span id="percentage">0%</span>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button id="reviewBtn" class="action-btn">
+                        <i class="fas fa-eye"></i> Review Answers
+                    </button>
+                    <button id="retakeBtn" class="action-btn primary">
+                        <i class="fas fa-redo"></i> Retake Test
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
