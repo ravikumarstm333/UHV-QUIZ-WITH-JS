@@ -2,7 +2,7 @@
 const quizData = [
     {
         question: "What best defines: Justice involves?",
-        hinglish: "Justice किसे कहते हैं? इसका सही मतलब क्या है?",
+        hinglish: "Justice (न्याय) में क्या शामिल होता है?",
         options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
         answer: "Mutual fulfillment"
     },
@@ -120,18 +120,65 @@ const quizData = [
         options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
         answer: "What I truly want"
     },
-    // Adding more questions with hinglish translations (total 200)
     {
-        question: "Body needs are:",
-        hinglish: "शरीर की जरूरतें कैसी होती हैं?",
+        question: "In UHV, professional ethics focuses on means:",
+        hinglish: "UHV में, professional ethics किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "In UHV, four orders of nature include means:",
+        hinglish: "UHV में, प्रकृति के चार क्रम कौन से हैं?",
+        options: ["Plant", "Material", "All of these", "Animal"],
+        answer: "All of these"
+    },
+    {
+        question: "Professional ethics focuses on:",
+        hinglish: "Professional ethics किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "In UHV, happiness refers to means:",
+        hinglish: "UHV में, happiness (खुशी) का मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "Love refers to:",
+        hinglish: "प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "According to value education, self is refers to:",
+        hinglish: "Value education के according, self (स्वयं) क्या है?",
+        options: ["Material", "Biological", "Mechanical", "Conscious"],
+        answer: "Conscious"
+    },
+    {
+        question: "What best defines: Body needs are?",
+        hinglish: "Body की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
         options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
         answer: "Limited"
     },
     {
-        question: "Self is:",
-        hinglish: "स्वयं क्या है?",
-        options: ["Material", "Biological", "Mechanical", "Conscious"],
-        answer: "Conscious"
+        question: "Self needs are:",
+        hinglish: "Self की जरूरतें कैसी होती हैं?",
+        options: ["Continuous", "Limited", "Temporary", "Physical"],
+        answer: "Continuous"
+    },
+    {
+        question: "In UHV, prosperity refers to means:",
+        hinglish: "UHV में, prosperity (समृद्धि) का मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "Professional ethics focuses on:",
+        hinglish: "Professional ethics किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
     },
     {
         question: "What best defines: Respect is based on?",
@@ -146,16 +193,922 @@ const quizData = [
         answer: "All of these"
     },
     {
+        question: "Body needs are:",
+        hinglish: "शरीर की जरूरतें कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "In UHV, body is means:",
+        hinglish: "UHV में, body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Four orders of nature include?",
+        hinglish: "प्रकृति के चार क्रम सबसे अच्छे तरीके से कौन से हैं?",
+        options: ["Plant", "Material", "All of these", "Animal"],
+        answer: "All of these"
+    },
+    {
+        question: "In UHV, relationships thrive on means:",
+        hinglish: "UHV में, रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "What best defines: Love refers to?",
+        hinglish: "प्यार का सही मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "What best defines: Professional ethics focuses on?",
+        hinglish: "Professional ethics सबसे अच्छे तरीके से किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "What best defines: Happiness refers to?",
+        hinglish: "खुशी का सही मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "In UHV, nature works on means:",
+        hinglish: "UHV में, nature (प्रकृति) कैसे काम करती है?",
+        options: ["Competition", "Coexistence", "Chaos", "Conflict"],
+        answer: "Coexistence"
+    },
+    {
+        question: "According to value education, respect is based on refers to:",
+        hinglish: "Value education के according, सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "In UHV, happiness refers to means:",
+        hinglish: "UHV में, happiness (खुशी) का मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "What best defines: Love refers to?",
+        hinglish: "प्यार का सही मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "What best defines: Love refers to?",
+        hinglish: "प्यार का सही मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
         question: "Happiness refers to:",
         hinglish: "खुशी का मतलब क्या है?",
         options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
         answer: "Continuous harmony"
     },
     {
+        question: "In UHV, trust means means:",
+        hinglish: "UHV में, trust (विश्वास) का मतलब क्या है?",
+        options: ["Assurance in intention", "Obligation", "Material gain", "Fear"],
+        answer: "Assurance in intention"
+    },
+    {
+        question: "According to value education, prosperity refers to refers to:",
+        hinglish: "Value education के according, prosperity (समृद्धि) का मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "What best defines: Respect is based on?",
+        hinglish: "सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "Existence is:",
+        hinglish: "अस्तित्व क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "What best defines: Self is?",
+        hinglish: "Self (स्वयं) सबसे अच्छे तरीके से क्या है?",
+        options: ["Material", "Biological", "Mechanical", "Conscious"],
+        answer: "Conscious"
+    },
+    {
+        question: "What best defines: Happiness refers to?",
+        hinglish: "खुशी का सही मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "According to value education, professional ethics focuses on refers to:",
+        hinglish: "Value education के according, professional ethics किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "What best defines: Natural acceptance means?",
+        hinglish: "Natural acceptance (स्वाभाविक स्वीकृति) का सही मतलब क्या है?",
+        options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
+        answer: "What I truly want"
+    },
+    {
+        question: "In UHV, justice involves means:",
+        hinglish: "UHV में, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "What best defines: Animals follow?",
+        hinglish: "जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "In UHV, fearlessness arises from means:",
+        hinglish: "UHV में, निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "Affection means:",
+        hinglish: "Affection (स्नेह) का मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "In UHV, animals follow means:",
+        hinglish: "UHV में, जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "According to value education, respect is based on refers to:",
+        hinglish: "Value education के according, सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "What best defines: Prosperity refers to?",
+        hinglish: "Prosperity (समृद्धि) का सही मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "In UHV, natural acceptance means means:",
+        hinglish: "UHV में, natural acceptance (स्वाभाविक स्वीकृति) क्या है?",
+        options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
+        answer: "What I truly want"
+    },
+    {
+        question: "What best defines: Affection means?",
+        hinglish: "Affection (स्नेह) का सही मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "According to value education, respect is based on refers to:",
+        hinglish: "Value education के according, सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "In UHV, professional ethics focuses on means:",
+        hinglish: "UHV में, professional ethics किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "In UHV, existence is means:",
+        hinglish: "UHV में, existence (अस्तित्व) क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "According to value education, body is refers to:",
+        hinglish: "Value education के according, body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Justice involves?",
+        hinglish: "Justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "In UHV, fearlessness arises from means:",
+        hinglish: "UHV में, निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "What best defines: Body needs are?",
+        hinglish: "Body की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "What best defines: Natural acceptance means?",
+        hinglish: "Natural acceptance (स्वाभाविक स्वीकृति) का सही मतलब क्या है?",
+        options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
+        answer: "What I truly want"
+    },
+    {
+        question: "According to value education, love refers to refers to:",
+        hinglish: "Value education के according, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "What best defines: Happiness refers to?",
+        hinglish: "खुशी का सही मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "Happiness refers to:",
+        hinglish: "खुशी का मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "In UHV, love refers to means:",
+        hinglish: "UHV में, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "Trust means:",
+        hinglish: "विश्वास का मतलब क्या है?",
+        options: ["Assurance in intention", "Obligation", "Material gain", "Fear"],
+        answer: "Assurance in intention"
+    },
+    {
+        question: "Body is:",
+        hinglish: "Body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Natural acceptance means?",
+        hinglish: "Natural acceptance (स्वाभाविक स्वीकृति) का सही मतलब क्या है?",
+        options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
+        answer: "What I truly want"
+    },
+    {
+        question: "What best defines: Body is?",
+        hinglish: "Body (शरीर) सबसे अच्छे तरीके से क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Love refers to?",
+        hinglish: "प्यार का सही मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "According to value education, self needs are refers to:",
+        hinglish: "Value education के according, self की जरूरतें कैसी होती हैं?",
+        options: ["Continuous", "Limited", "Temporary", "Physical"],
+        answer: "Continuous"
+    },
+    {
+        question: "Relationships thrive on:",
+        hinglish: "रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "According to value education, existence is refers to:",
+        hinglish: "Value education के according, existence (अस्तित्व) क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "Body is:",
+        hinglish: "Body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Body is?",
+        hinglish: "Body (शरीर) सबसे अच्छे तरीके से क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Respect is based on?",
+        hinglish: "सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "According to value education, animals follow refers to:",
+        hinglish: "Value education के according, जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "In UHV, gratitude is means:",
+        hinglish: "UHV में, gratitude (कृतज्ञता) क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
+        question: "In UHV, justice involves means:",
+        hinglish: "UHV में, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "According to value education, love refers to refers to:",
+        hinglish: "Value education के according, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "According to value education, trust means refers to:",
+        hinglish: "Value education के according, विश्वास का मतलब क्या है?",
+        options: ["Assurance in intention", "Obligation", "Material gain", "Fear"],
+        answer: "Assurance in intention"
+    },
+    {
+        question: "In UHV, justice involves means:",
+        hinglish: "UHV में, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "According to value education, affection means refers to:",
+        hinglish: "Value education के according, affection (स्नेह) का मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "What best defines: Self needs are?",
+        hinglish: "Self की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
+        options: ["Continuous", "Limited", "Temporary", "Physical"],
+        answer: "Continuous"
+    },
+    {
+        question: "In UHV, existence is means:",
+        hinglish: "UHV में, existence (अस्तित्व) क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "In UHV, affection means means:",
+        hinglish: "UHV में, affection (स्नेह) का मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "According to value education, nature works on refers to:",
+        hinglish: "Value education के according, nature (प्रकृति) कैसे काम करती है?",
+        options: ["Competition", "Coexistence", "Chaos", "Conflict"],
+        answer: "Coexistence"
+    },
+    {
+        question: "Trust means:",
+        hinglish: "विश्वास का मतलब क्या है?",
+        options: ["Assurance in intention", "Obligation", "Material gain", "Fear"],
+        answer: "Assurance in intention"
+    },
+    {
+        question: "In UHV, body needs are means:",
+        hinglish: "UHV में, body की जरूरतें कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "What best defines: Self needs are?",
+        hinglish: "Self की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
+        options: ["Continuous", "Limited", "Temporary", "Physical"],
+        answer: "Continuous"
+    },
+    {
+        question: "In UHV, respect is based on means:",
+        hinglish: "UHV में, सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "According to value education, body needs are refers to:",
+        hinglish: "Value education के according, body की जरूरतें कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "In UHV, love refers to means:",
+        hinglish: "UHV में, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "According to value education, affection means refers to:",
+        hinglish: "Value education के according, affection (स्नेह) का मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "In UHV, nature works on means:",
+        hinglish: "UHV में, nature (प्रकृति) कैसे काम करती है?",
+        options: ["Competition", "Coexistence", "Chaos", "Conflict"],
+        answer: "Coexistence"
+    },
+    {
+        question: "Gratitude is:",
+        hinglish: "कृतज्ञता क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
+        question: "What best defines: Body is?",
+        hinglish: "Body (शरीर) सबसे अच्छे तरीके से क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "Body needs are:",
+        hinglish: "शरीर की जरूरतें कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "Self needs are:",
+        hinglish: "Self की जरूरतें कैसी होती हैं?",
+        options: ["Continuous", "Limited", "Temporary", "Physical"],
+        answer: "Continuous"
+    },
+    {
+        question: "In UHV, trust means means:",
+        hinglish: "UHV में, trust (विश्वास) का मतलब क्या है?",
+        options: ["Assurance in intention", "Obligation", "Material gain", "Fear"],
+        answer: "Assurance in intention"
+    },
+    {
+        question: "Four orders of nature include:",
+        hinglish: "प्रकृति के चार क्रम कौन से हैं?",
+        options: ["Plant", "Material", "All of these", "Animal"],
+        answer: "All of these"
+    },
+    {
+        question: "What best defines: Self needs are?",
+        hinglish: "Self की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
+        options: ["Continuous", "Limited", "Temporary", "Physical"],
+        answer: "Continuous"
+    },
+    {
+        question: "What best defines: Gratitude is?",
+        hinglish: "कृतज्ञता का सही मतलब क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
         question: "Love refers to:",
         hinglish: "प्यार का मतलब क्या है?",
         options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
         answer: "Feeling of relatedness"
+    },
+    {
+        question: "What best defines: Natural acceptance means?",
+        hinglish: "Natural acceptance (स्वाभाविक स्वीकृति) का सही मतलब क्या है?",
+        options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
+        answer: "What I truly want"
+    },
+    {
+        question: "In UHV, animals follow means:",
+        hinglish: "UHV में, जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "In UHV, existence is means:",
+        hinglish: "UHV में, existence (अस्तित्व) क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "Gratitude is:",
+        hinglish: "कृतज्ञता क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
+        question: "According to value education, professional ethics focuses on refers to:",
+        hinglish: "Value education के according, professional ethics किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "What best defines: Four orders of nature include?",
+        hinglish: "प्रकृति के चार क्रम सबसे अच्छे तरीके से कौन से हैं?",
+        options: ["Plant", "Material", "All of these", "Animal"],
+        answer: "All of these"
+    },
+    {
+        question: "According to value education, happiness refers to refers to:",
+        hinglish: "Value education के according, खुशी का मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "According to value education, respect is based on refers to:",
+        hinglish: "Value education के according, सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "In UHV, justice involves means:",
+        hinglish: "UHV में, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "According to value education, respect is based on refers to:",
+        hinglish: "Value education के according, सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "According to value education, fearlessness arises from refers to:",
+        hinglish: "Value education के according, निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "According to value education, four orders of nature include refers to:",
+        hinglish: "Value education के according, प्रकृति के चार क्रम कौन से हैं?",
+        options: ["Plant", "Material", "All of these", "Animal"],
+        answer: "All of these"
+    },
+    {
+        question: "What best defines: Professional ethics focuses on?",
+        hinglish: "Professional ethics सबसे अच्छे तरीके से किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "According to value education, relationships thrive on refers to:",
+        hinglish: "Value education के according, रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "According to value education, prosperity refers to refers to:",
+        hinglish: "Value education के according, prosperity (समृद्धि) का मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "What best defines: Self is?",
+        hinglish: "Self (स्वयं) सबसे अच्छे तरीके से क्या है?",
+        options: ["Material", "Biological", "Mechanical", "Conscious"],
+        answer: "Conscious"
+    },
+    {
+        question: "In UHV, love refers to means:",
+        hinglish: "UHV में, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "Affection means:",
+        hinglish: "Affection (स्नेह) का मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "Gratitude is:",
+        hinglish: "कृतज्ञता क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
+        question: "Love refers to:",
+        hinglish: "प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "Relationships thrive on:",
+        hinglish: "रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "According to value education, gratitude is refers to:",
+        hinglish: "Value education के according, कृतज्ञता क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
+        question: "According to value education, fearlessness arises from refers to:",
+        hinglish: "Value education के according, निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "In UHV, existence is means:",
+        hinglish: "UHV में, existence (अस्तित्व) क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "What best defines: Body needs are?",
+        hinglish: "Body की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "Affection means:",
+        hinglish: "Affection (स्नेह) का मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "What best defines: Body needs are?",
+        hinglish: "Body की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "Prosperity refers to:",
+        hinglish: "समृद्धि का मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "According to value education, body needs are refers to:",
+        hinglish: "Value education के according, body की जरूरतें कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "Love refers to:",
+        hinglish: "प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "Existence is:",
+        hinglish: "अस्तित्व क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "In UHV, fearlessness arises from means:",
+        hinglish: "UHV में, निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "Relationships thrive on:",
+        hinglish: "रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "Body is:",
+        hinglish: "Body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Self is?",
+        hinglish: "Self (स्वयं) सबसे अच्छे तरीके से क्या है?",
+        options: ["Material", "Biological", "Mechanical", "Conscious"],
+        answer: "Conscious"
+    },
+    {
+        question: "In UHV, body needs are means:",
+        hinglish: "UHV में, body की जरूरतें कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "Relationships thrive on:",
+        hinglish: "रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "According to value education, animals follow refers to:",
+        hinglish: "Value education के according, जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "Body is:",
+        hinglish: "Body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Prosperity refers to?",
+        hinglish: "Prosperity (समृद्धि) का सही मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "In UHV, body is means:",
+        hinglish: "UHV में, body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "In UHV, love refers to means:",
+        hinglish: "UHV में, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "In UHV, nature works on means:",
+        hinglish: "UHV में, nature (प्रकृति) कैसे काम करती है?",
+        options: ["Competition", "Coexistence", "Chaos", "Conflict"],
+        answer: "Coexistence"
+    },
+    {
+        question: "In UHV, body needs are means:",
+        hinglish: "UHV में, body की जरूरतें कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "Existence is:",
+        hinglish: "अस्तित्व क्या है?",
+        options: ["Coexistence", "Chaos", "Void", "Uncertainty"],
+        answer: "Coexistence"
+    },
+    {
+        question: "In UHV, prosperity refers to means:",
+        hinglish: "UHV में, prosperity (समृद्धि) का मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "What best defines: Fearlessness arises from?",
+        hinglish: "निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "What best defines: Gratitude is?",
+        hinglish: "कृतज्ञता का सही मतलब क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
+        question: "In UHV, prosperity refers to means:",
+        hinglish: "UHV में, prosperity (समृद्धि) का मतलब क्या है?",
+        options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
+        answer: "Feeling of enough"
+    },
+    {
+        question: "What best defines: Affection means?",
+        hinglish: "Affection (स्नेह) का सही मतलब क्या है?",
+        options: ["Temporary liking", "Attachment", "Sensation", "Mutual happiness"],
+        answer: "Mutual happiness"
+    },
+    {
+        question: "According to value education, justice involves refers to:",
+        hinglish: "Value education के according, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "According to value education, respect is based on refers to:",
+        hinglish: "Value education के according, सम्मान किस पर आधारित होता है?",
+        options: ["Fear", "Status", "Wealth", "Right understanding"],
+        answer: "Right understanding"
+    },
+    {
+        question: "According to value education, justice involves refers to:",
+        hinglish: "Value education के according, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "According to value education, justice involves refers to:",
+        hinglish: "Value education के according, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "According to value education, professional ethics focuses on refers to:",
+        hinglish: "Value education के according, professional ethics किस पर focus करती है?",
+        options: ["Human well-being", "Brand value", "Competition", "Profit"],
+        answer: "Human well-being"
+    },
+    {
+        question: "In UHV, justice involves means:",
+        hinglish: "UHV में, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "According to value education, nature works on refers to:",
+        hinglish: "Value education के according, nature (प्रकृति) कैसे काम करती है?",
+        options: ["Competition", "Coexistence", "Chaos", "Conflict"],
+        answer: "Coexistence"
+    },
+    {
+        question: "In UHV, natural acceptance means means:",
+        hinglish: "UHV में, natural acceptance (स्वाभाविक स्वीकृति) क्या है?",
+        options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
+        answer: "What I truly want"
+    },
+    {
+        question: "Animals follow:",
+        hinglish: "जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "In UHV, fearlessness arises from means:",
+        hinglish: "UHV में, निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "Self is:",
+        hinglish: "Self (स्वयं) क्या है?",
+        options: ["Material", "Biological", "Mechanical", "Conscious"],
+        answer: "Conscious"
+    },
+    {
+        question: "What best defines: Animals follow?",
+        hinglish: "जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "In UHV, happiness refers to means:",
+        hinglish: "UHV में, happiness (खुशी) का मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
+    },
+    {
+        question: "Justice involves:",
+        hinglish: "Justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "What best defines: Body needs are?",
+        hinglish: "Body की जरूरतें सबसे अच्छे तरीके से कैसी होती हैं?",
+        options: ["Emotional", "Limited", "Spiritual", "Unlimited"],
+        answer: "Limited"
+    },
+    {
+        question: "Animals follow:",
+        hinglish: "जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "In UHV, body is means:",
+        hinglish: "UHV में, body (शरीर) क्या है?",
+        options: ["Self", "Energy", "Instrument of Self", "Conscious"],
+        answer: "Instrument of Self"
+    },
+    {
+        question: "What best defines: Gratitude is?",
+        hinglish: "कृतज्ञता का सही मतलब क्या है?",
+        options: ["Thankfulness", "Obligation", "Comparison", "Fear"],
+        answer: "Thankfulness"
+    },
+    {
+        question: "Relationships thrive on:",
+        hinglish: "रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "According to value education, love refers to refers to:",
+        hinglish: "Value education के according, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "In UHV, relationships thrive on means:",
+        hinglish: "UHV में, रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
+        question: "What best defines: Happiness refers to?",
+        hinglish: "खुशी का सही मतलब क्या है?",
+        options: ["Material comfort", "Sensation", "Excitement", "Continuous harmony"],
+        answer: "Continuous harmony"
     },
     {
         question: "Trust means:",
@@ -170,18 +1123,83 @@ const quizData = [
         answer: "Coexistence"
     },
     {
+        question: "According to value education, love refers to refers to:",
+        hinglish: "Value education के according, प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "In UHV, self needs are means:",
+        hinglish: "UHV में, self की जरूरतें कैसी होती हैं?",
+        options: ["Continuous", "Limited", "Temporary", "Physical"],
+        answer: "Continuous"
+    },
+    {
+        question: "According to value education, justice involves refers to:",
+        hinglish: "Value education के according, justice (न्याय) में क्या शामिल होता है?",
+        options: ["Punishment", "Reward", "Mutual fulfillment", "Superiority"],
+        answer: "Mutual fulfillment"
+    },
+    {
+        question: "Trust means:",
+        hinglish: "विश्वास का मतलब क्या है?",
+        options: ["Assurance in intention", "Obligation", "Material gain", "Fear"],
+        answer: "Assurance in intention"
+    },
+    {
+        question: "In UHV, animals follow means:",
+        hinglish: "UHV में, जानवर क्या follow करते हैं?",
+        options: ["Values", "Ethics", "Preconditioning", "Natural acceptance"],
+        answer: "Preconditioning"
+    },
+    {
+        question: "In UHV, four orders of nature include means:",
+        hinglish: "UHV में, प्रकृति के चार क्रम कौन से हैं?",
+        options: ["Plant", "Material", "All of these", "Animal"],
+        answer: "All of these"
+    },
+    {
+        question: "Natural acceptance means:",
+        hinglish: "Natural acceptance (स्वाभाविक स्वीकृति) का मतलब क्या है?",
+        options: ["What society likes", "What media shows", "What others follow", "What I truly want"],
+        answer: "What I truly want"
+    },
+    {
+        question: "What best defines: Fearlessness arises from?",
+        hinglish: "निडरता कहाँ से आती है?",
+        options: ["Right understanding", "Money", "Power", "Weapons"],
+        answer: "Right understanding"
+    },
+    {
+        question: "Love refers to:",
+        hinglish: "प्यार का मतलब क्या है?",
+        options: ["Attraction", "Feeling of relatedness", "Obligation", "Attachment"],
+        answer: "Feeling of relatedness"
+    },
+    {
+        question: "What best defines: Relationships thrive on?",
+        hinglish: "रिश्ते किस पर पनपते हैं?",
+        options: ["Mutual trust", "Competition", "Wealth", "Status"],
+        answer: "Mutual trust"
+    },
+    {
         question: "Prosperity refers to:",
         hinglish: "समृद्धि का मतलब क्या है?",
         options: ["Feeling of enough", "High income", "Accumulation", "Luxury"],
         answer: "Feeling of enough"
     },
     {
-        question: "In UHV, relationships thrive on means:",
-        hinglish: "UHV में, रिश्ते किस पर पनपते हैं?",
-        options: ["Mutual trust", "Competition", "Wealth", "Status"],
-        answer: "Mutual trust"
+        question: "In UHV, self is means:",
+        hinglish: "UHV में, self (स्वयं) क्या है?",
+        options: ["Material", "Biological", "Mechanical", "Conscious"],
+        answer: "Conscious"
     },
-    // More questions would continue here up to 200...
+    {
+        question: "Trust means:",
+        hinglish: "विश्वास का मतलब क्या है?",
+        options: ["Assurance in intention", "Obligation", "Material gain", "Fear"],
+        answer: "Assurance in intention"
+    }
 ];
 
 // For demo, let's fill remaining questions with sample data
